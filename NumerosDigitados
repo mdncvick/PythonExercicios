@@ -1,0 +1,12 @@
+ND = []
+
+for _ in range(10):
+    N1 = int(input("Digite um número: "))
+
+    if N1 % 2 == 0:
+        N1 += 1
+    ND.append(N1)
+
+print("Números digitados:")
+for N in ND:
+    print(N)
