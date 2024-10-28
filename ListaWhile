@@ -1,0 +1,7 @@
+listaCompras = ["Detergente neutro", "Amaciante", "Cebola", "Morangos", "Salada Lavada"]
+
+i = 0
+print("Lista de compras: ")
+while i < len(listaCompras):
+    print(listaCompras[i])
+    i += 1
