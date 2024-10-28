@@ -1,0 +1,18 @@
+I = int(input('Qual a sua idade? '))
+
+if 0 <= I <= 11:
+    classificacao = "Você é criança!"
+elif 12 <= I <= 18:
+    classificacao = "Você é adolescente!"
+elif 19 <= I <= 24:
+    classificacao = "Você é jovem!"
+elif 25 <= I <= 40:
+    classificacao = "Você já pe adulto!"
+elif 41 <= I <= 60:
+    classificacao = "Você se encontra na meia idade."
+elif I > 60:
+    classificacao = "Você é idoso."
+else:
+    classificacao = "Idade informada é inválida."
+
+print("Sua faixa etária é: ", classificacao)
