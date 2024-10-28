@@ -1,0 +1,19 @@
+from datetime import datetime
+
+anoN = int(input("Qual o ano em que você nasceu? "))
+mesN = int(input("E o mês? [1 a 12]: "))
+
+dataA = datetime.now()
+anoA = data_atual.year
+mesA = data_atual.month
+
+I = anoA - anoN
+
+if I > 18 or (I == 18 and mes_atual >= mes_nascimento):
+    R = "Você já completou 18 anos!"
+elif I == 17 or (I == 18 and mes_atual < mes_nascimento):
+    R = "Você ainda completará 18 anos neste ano!"
+else:
+    R = "Você não fará 18 anos neste ano."
+
+print(R)
