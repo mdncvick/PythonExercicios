@@ -1,0 +1,9 @@
+listaCompras = [
+    {"Descrição do produto": "Leite de soja", "Valor": 8.70},
+    {"Descrição do produto": "Água 2L", "Valor": 3.50},
+    {"Descrição do produto": "Bife de soja", "Valor": 22.00},
+    {"Descrição do produto": "Chocolate branco", "Valor": 5.80}
+]
+
+for itemCompra in listaCompras:
+    print("Produto:", itemCompra["descriptor"], "por", str(itemCompra["preço"]), "reais.")
