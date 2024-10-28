@@ -1,6 +1,6 @@
 I = input('Qual a sua idade? ')
 
 if I.isdigit():
-    print('Você tem {I} anos.'.format)
+    print('Você tem {I} anos.'.format(I))
 else:
     print('A idade digitada é inválida.')
