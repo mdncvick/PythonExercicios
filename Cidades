@@ -1,0 +1,7 @@
+C = []
+
+for i in range(3):
+    C1 = input(f"Digite o nome da cidade {i + 1}: ")
+    C.append(C1)
+
+print("Cidades:", C)
