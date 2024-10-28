@@ -1,0 +1,5 @@
+listaCompras = ["Sachê de gato", "Azeite", "Ovos", "Chocolate", "Cebolinha", "Desinfetante"]
+
+print("Lista de Compras: ")
+for I in listaCompras:
+    print(I)
