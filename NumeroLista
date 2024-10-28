@@ -1,0 +1,7 @@
+numeros = (2, 8, 23, 45, 63, 78, 94, 133, 228)
+N = int(input("Digite um número: "))
+
+if N in numeros:
+    print(f"O número {N} consta na lista secreta!")
+else:
+    print(f"O número {N} não consta na lista secreta!")
