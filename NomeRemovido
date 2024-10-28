@@ -1,0 +1,15 @@
+NS = []
+
+for i in range(5):
+    N = input(f"Digite o nome {i + 1}: ")
+    NS.append(N)
+
+indice = int(input("\nDigite um número de 0 a 4 para remover o nome dessa posição: "))
+
+if 0 <= indice < len(NS):
+    removed_N = NS.pop(indice)
+    print(f"O nome '{removed_N}' foi removido.")
+else:
+    print("Índice inválido.")
+
+print("\nNomes restantes:", NS)
