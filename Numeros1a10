@@ -1,0 +1,8 @@
+numeros = list(range(1, 11))
+
+indice = 0
+print("Números pares de 1 a 10:")
+while indice < len(numeros):
+    if numeros[indice] % 2 == 0:
+        print(numeros[indice])
+    indice += 1
