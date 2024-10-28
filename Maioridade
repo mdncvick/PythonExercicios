@@ -1,0 +1,6 @@
+I = int(input('Qual é a sua idade? '))
+
+if I >= 18:
+    print('Você já atingiu a maioridade!')
+else:
+    print('Você ainda é menor de idade.')
