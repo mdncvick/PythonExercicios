@@ -1,2 +1,2 @@
 N = str(input('Informe seu nome: '))
-print('Olá [N]!'.format[N])
+print('Olá {N}!'.format{N})
