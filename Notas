@@ -1,0 +1,13 @@
+N1 = float(input("Digite a primeira nota: "))
+N2 = float(input("Digite a segunda nota: "))
+N3 = float(input("Digite a terceira nota: "))
+
+M = (N1 + N2 + N3) / 3
+
+if M >= 7:
+    R = "Você foi aprovado(a)!"
+else:
+    R = "Você foi reprovado(a)!"
+
+print("Média:", M)
+print("Resultado:", R)
