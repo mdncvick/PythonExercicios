@@ -1,0 +1,2 @@
+M = str(input('Digite uma mensagem: '))
+print(M)
