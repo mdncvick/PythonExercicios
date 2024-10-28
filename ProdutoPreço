@@ -1,0 +1,6 @@
+produto = {
+  "Descrição do produto": "Leite de soja",
+  "Valor": 8.
+}
+
+print(produto)
