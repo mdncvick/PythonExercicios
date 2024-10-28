@@ -1,0 +1,2 @@
+F = ("Victoria, Bruna, Cacau, Cenourinha, Popinha")
+print("Nomes da família: ", F)
