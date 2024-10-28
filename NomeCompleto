@@ -1,0 +1,9 @@
+nomeCompleto = str(input('Digite o seu nome completo: '))
+
+N = nomeCompleto.split()
+
+if len(N) >= 2:
+    segundoNome = N[1]
+    print('Seu primeiro sobrenome é: ', segundoNome)
+else:
+    print('Nome incompleto. Por gentileza incluir também o sobrenome.')
