@@ -1,0 +1,14 @@
+P = [
+    {"N": "Victoria", "S": "Mendonça"},
+    {"N": "Pedro", "SOBRENOME": "Lázaro"},
+    {"N": "Joana", "S": "Darc"},
+    {"N": "Frida", "SOBRENOME": "Kahlo"},
+    {"N": "Marielle", "S": "Santos"},
+]
+
+
+for P in P2:
+    N = P.get("N") or P.get("NOME")
+    S = P.get("S") or P.get("SOBRENOME")
+
+    print(N, S)
