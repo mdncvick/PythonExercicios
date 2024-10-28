@@ -1,0 +1,13 @@
+N = []
+quantidade = 10
+
+while len(N) < quantidade:
+    N1 = int(input("Digite um número ímpar: "))
+    if N1 % 2 == 0 and N1 not in N:
+        print("O número precisa ser ímpar e não pode se repetir.")
+    else:
+        N.append(N1)
+
+print("\nNúmeros ímpares informados: ")
+for num in N:
+    print(num)
