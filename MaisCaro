@@ -1,0 +1,20 @@
+maisBarato = None
+maisCaro = None
+indice = 0
+
+while indice < len(listaCompras):
+    itemCompra = listaCompras[indice]
+
+    if indice == 0:
+        maisCaro = itemCompra
+        maisBarato = itemCompra
+    else:
+        if itemCompra["preço"] > maisCaro["preço"]:
+            maisCaro = itemCompra
+        if itemCompra["preço"] < maisBarato["preço"]:
+            maisBarato = itemCompra
+
+    indice += 1
+
+print("Produto mais caro:", maisCaro["descrição"], "por", maisCaro["preço"], "reais")
+print("Produto mais barato:", maisBarato["descrição"], "por", maisBarato["preço"], "reais")
