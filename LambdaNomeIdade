@@ -1,0 +1,6 @@
+NomeIdade = lambda nome, idade: print(nome, "possui", idade, "anos.")
+
+nome2 = str(input("Digite seu nome: "))
+idade2 = int(input("Digite sua idade: "))
+
+NomeIdade(nome2, idade2)
