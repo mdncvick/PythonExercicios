@@ -1,0 +1,45 @@
+torcedores = {
+    "Fluminense": 0,
+    "Botafogo": 0,
+    "Vasco": 0,
+    "Flamengo": 0,
+    "Outros": 0
+}
+soma_salarios_botafogo = 0
+moradores_rj_outros_clubes = 0
+niteroi_fluminense = 0
+
+while True:
+    time = int(input("Qual seu time de coração? (1-Fluminense; 2-Botafogo; 3-Vasco; 4-Flamengo; 5-Outros): "))
+    if time == 1:
+        torcedores["Fluminense"] += 1
+    elif time == 2:
+        torcedores["Botafogo"] += 1
+        salario = float(input("Digite seu salário: "))
+        soma_salarios_botafogo += salario
+    elif time == 3:
+        torcedores["Vasco"] += 1
+    elif time == 4:
+        torcedores["Flamengo"] += 1
+    elif time == 5:
+        torcedores["Outros"] += 1
+
+    moradia = int(input("Onde você mora? (1-RJ; 2-Niterói; 3-Outros): "))
+    if moradia == 1 and time != 2:  # Moradores do RJ, torcedores de outros clubes
+        moradores_rj_outros_clubes += 1
+    elif moradia == 2 and time == 1:  # Niterói e torcedores do Fluminense
+        niteroi_fluminense += 1
+
+    continuar = input("Deseja continuar? (sim/não): ").strip().lower()
+    if continuar != 'sim':
+        break
+
+# Resultados
+print("Número de torcedores por clube:")
+for time, contagem in torcedores.items():
+    print(f"{time}: {contagem}")
+
+media_salarios_botafogo = soma_salarios_botafogo / torcedores["Botafogo"] if torcedores["Botafogo"] > 0 else 0
+print(f"Média salarial dos torcedores do Botafogo: R${media_salarios_botafogo:.2f}")
+print(f"Número de moradores do RJ torcedores de outros clubes: {moradores_rj_outros_clubes}")
+print(f"Número de pessoas de Niterói torcedoras do Fluminense: {niteroi_fluminense}")
