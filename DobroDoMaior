@@ -1,0 +1,21 @@
+def Maior(N1, N2, N3):
+  M = None
+  if N1 > N2 and N1 > N3:
+    M = N1
+  elif N2 > N1 and N2 > N3:
+    M = N2
+  else:
+    M = N3
+  return M
+
+def dobrar(N1):
+  return N1 * 2
+
+N1 = int(input("Digite o primeiro número: "))
+N2 = int(input("Digite o segundo número: "))
+N3 = int(input("Digite o terceiro número: "))
+
+M = Maior(N1, N2, N3)
+
+print("O dobro do maior número é ", dobrar(M))
+print("O maior número digitado foi: ", M)
