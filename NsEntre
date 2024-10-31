@@ -1,0 +1,6 @@
+NS = list(range(1, 11))
+
+print("Números pares entre 1 e 10:")
+for N in NS:
+    if N % 2 == 0:
+        print(N)
