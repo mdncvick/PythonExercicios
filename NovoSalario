@@ -1,0 +1,14 @@
+while True:
+    N = input("Digite o nome do funcionário: ")
+    S = float(input("Digite o salário do funcionário: "))
+
+    R = 0.08
+    NS = S * (1 + R)
+
+    print(f"Nome: {N}")
+    print(f"Salário: R${S:.2f}")
+    print(f"Novo Salário: R${NS:.2f}")
+
+    continuar = input("Deseja fazer novos cálculos? (sim/não): ").strip().lower()
+    if continuar != 'sim':
+        break
