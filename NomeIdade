@@ -1,0 +1,7 @@
+def NomeIdade(nome, idade):
+  print("A (o)", nome, "possui", idade, "anos de idade.")
+
+nome2 = str(input("Qual o seu nome?: "))
+idade2 = int(input("Qual sua idade?: "))
+
+NomeIdade(nome2, idade2)
