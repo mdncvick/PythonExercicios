@@ -1,0 +1,25 @@
+PS = [
+    "Telefonou para a vítima? (s/n) ",
+    "Esteve no local do crime? (s/n) ",
+    "Mora perto da vítima? (s/n) ",
+    "Devia para a vítima? (s/n) ",
+    "Já trabalhou com a vítima? (s/n) "
+]
+
+RP = 0
+
+for P in PS:
+    R = input(P).strip().lower()
+    if R == 's':
+        RP += 1
+
+if RP == 0:
+    C = "Inocente"
+elif RP == 2:
+    C = "Suspeita"
+elif 3 <= RP <= 4:
+    C = "Cúmplice"
+elif RP == 5:
+    C = "Assassino"
+
+print("Classificação:", C)
