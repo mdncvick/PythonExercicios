@@ -1,0 +1,29 @@
+def calcular_salario(vendas):
+    salario_fixo = 200
+    comissao = 0.09
+    salario_total = salario_fixo + vendas * comissao
+    return salario_total
+
+def classificar_vendedores(salarios):
+    faixas_salariais = [0] * 10
+    for salario in salarios:
+        if salario < 200:
+            continue
+        elif salario < 1000:
+            indice = int((salario - 200) // 100)
+            faixas_salariais[indice] += 1
+        else:
+            faixas_salariais[9] += 1
+    return faixas_salariais
+
+vendas_semanais = [3000, 2500, 4200, 1800, 5500]
+salarios = [calcular_salario(vendas) for vendas in vendas_semanais]
+contagem_por_faixa = classificar_vendedores(salarios)
+
+for i, contagem in enumerate(contagem_por_faixa):
+    if i < 9:
+        faixa = f"${200 + i*100}-${299 + i*100}"
+    else:
+        faixa = "$1000 em diante"
+    print(f"Vendedores na faixa {faixa}: {contagem}")
+    
