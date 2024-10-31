@@ -1,0 +1,14 @@
+N = int(input("Quantas caixas deseja registrar? "))
+TP = 0
+TV = 0
+
+for _ in range(n):
+    P = float(input("Digite o peso da caixa: "))
+    TP += P
+    TV += 1
+
+PM = TP / TV if TV > 0 else 0
+
+print(f"Quantidade de volumes: {total_volumes}")
+print(f"Peso total dos volumes: {total_peso:.2f} kg")
+print(f"Peso médio dos volumes: {peso_medio:.2f} kg")
