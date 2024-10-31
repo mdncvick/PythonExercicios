@@ -1,0 +1,17 @@
+def SolNome():
+  return str (input("Digite um nome: ") )
+
+def AddNome(lista, nome):
+  lista.append(nome)
+
+def escNomes(lista):
+  for nome in lista:
+    print(nome)
+
+nomes = []
+
+for contador in range(0,5):
+  nome = SolNome()
+  AddNome(nomes, nome)
+
+escNomes(nomes)
