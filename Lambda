@@ -1,0 +1,2 @@
+funcao = lambda:print("Função Lambda - Victória M. M.")
+funcao()
