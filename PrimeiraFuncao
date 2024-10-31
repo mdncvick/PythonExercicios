@@ -1,0 +1,4 @@
+def minhaPrimeiraFunção():
+    print("Minha primeira função - Victória Mendonça Machado")
+
+minhaPrimeiraFunção()
