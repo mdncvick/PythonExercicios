@@ -1,0 +1,16 @@
+TC = 0
+for i in range(10):
+    PC = float(input(f"Digite o preço de compra da mercadoria {i + 1}: "))
+    PV = float(input(f"Digite o preço de venda da mercadoria {i + 1}: "))
+
+    L = PV - PC
+    TC += PC
+
+    if L > 0:
+        print(f"Mercadoria {i + 1}: Houve lucro.")
+        if (L / PC) > 0.15:
+            print("O lucro foi maior que 15%.")
+    else:
+        print(f"Mercadoria {i + 1}: Não houve lucro.")
+
+print(f"Valor total das mercadorias compradas: R${TC:.2f}")
