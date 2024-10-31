@@ -1,0 +1,24 @@
+idBoiGordo = ""
+boiGordo = 0
+idBoiMagro = ""
+boiMagro = float('inf')
+
+while True:
+    idBoi = input("Digite a identificação do boi (ou 'sair' para encerrar): ")
+    if idBoi.lower() == 'sair':
+        break
+    pesoBoi = float(input("Digite o peso do boi: "))
+    if pesoBoi > boiGordo:
+        boiGordo = pesoBoi
+        idBoiGordo = idBoi
+
+
+    if pesoBoi < boiMagro:
+        boiMagro = pesoBoi
+        idBoiMagro = idBoi
+
+if idBoiGordo and idBoiMagro:
+    print(f"O boi mais gordo é: ID = {idBoiGordo}, Peso = {boiGordo}")
+    print(f"O boi mais magro é: ID = {idBoiMagro}, Peso = {boiMagro}")
+else:
+    print("Nenhum boi foi cadastrado.")
