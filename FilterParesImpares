@@ -1,0 +1,15 @@
+def EscArray(array):
+  for valor in array:
+    print(valor)
+
+NS = []
+
+for indice in range(1,10):
+  N = int(input("Digite um número: "))
+  NS.append(N)
+
+pares = filter(lambda N: N % 2 == 0, NS)
+impares = filter(lambda N: N % 2 == 1, NS)
+
+EscArray(pares)
+EscArray(impares)
