@@ -1,0 +1,10 @@
+NS = []
+
+for indice in range(1,5):
+  N = int(input("Digite um número: "))
+  NS.append(N)
+
+MS = filter(lambda N: N > 10, NS)
+
+for M in MS:
+  print(M)
