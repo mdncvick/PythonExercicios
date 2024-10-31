@@ -1,0 +1,7 @@
+M = lambda N1, N2: N1 * N2
+
+N = int(input("Digite o primeiro número: "))
+N2 = int(input("Digite o segundo número: "))
+R = M(N, N2)
+
+print("O resultado da multiplicação entre {} e {} resulta em {}".format(N, N2, R))
