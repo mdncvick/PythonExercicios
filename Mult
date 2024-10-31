@@ -1,0 +1,8 @@
+def mult(N1, N2):
+  return N1 * N2
+
+N = int(input("Digite o primeiro número: "))
+N2 = int(input("Digite o segundo número: "))
+R = mult(N, N2)
+
+print(R)
