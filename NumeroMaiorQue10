@@ -1,0 +1,7 @@
+N = int(input('Digite um número: '))
+if N >= 10 and N <= 99:
+    print('2 números')
+elif N >=100 and N <=999:
+    print('3 números')
+else:
+    print('1 ou mais números')
